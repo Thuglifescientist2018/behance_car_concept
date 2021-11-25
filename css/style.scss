@@ -7,6 +7,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 // Utility Classes
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+// Tag settings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-bottom: 20px;
+}
 // Links
 
 .link {
@@ -436,6 +449,7 @@ body {
 }
 
 #rent_three_options {
+  z-index: 1;
   min-height: 700px;
   position: relative;
   .rotated_red_background {
@@ -448,6 +462,7 @@ body {
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     border-top-left-radius: 50px;
+
     .rent_text {
       position: relative;
       top: 10%;
@@ -496,6 +511,100 @@ body {
     h2,
     p {
       transform: rotate(3deg);
+    }
+  }
+}
+#timing {
+  background: url("../images/backgrounds/background_car2.jpg") center center
+    no-repeat;
+  margin-top: -5%;
+  padding-top: 10%;
+  transform: rotate(-3deg);
+  color: white;
+  z-index: -1;
+  .timings {
+    transform: rotate(3deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .timing_text {
+      width: 30%;
+    }
+    .timing_text,
+    .timing_text2,
+    .timing_text3 {
+      margin: 1rem;
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    .timing_text2 {
+      .icon_text {
+        display: flex;
+
+        i {
+          font-size: 2rem;
+          margin: 1rem;
+        }
+      }
+    }
+    .timing_text3 {
+      .icon_text {
+        display: flex;
+
+        gap: 1rem;
+        i {
+          font-size: 2rem;
+          margin: 1rem;
+        }
+      }
+    }
+    padding-bottom: 10%;
+  }
+}
+#mobileapp {
+  z-index: 2;
+  margin-top: -2%;
+  padding: 10%;
+  .white_rotated_bg {
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    margin-left: 1%;
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 1200px;
+      gap: 5%;
+
+      img {
+        width: 100%;
+        height: 80%;
+      }
+    }
+    .mobile_text {
+      margin-top: 5%;
+      width: 50%;
+    }
+  }
+}
+#main_footer {
+  background: #0b0d17;
+  color: white;
+  padding: 2rem;
+  .container {
+    .footer_infos {
+      display: flex;
+      justify-content: center;
+      gap: 4%;
+      ul {
+        list-style: none;
+        li {
+          padding: 1rem;
+          font-size: 0.8rem;
+          color: rgba(255, 255, 255, 0.5);
+        }
+      }
     }
   }
 }
