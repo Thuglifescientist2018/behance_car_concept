@@ -538,10 +538,11 @@ body {
   color: white;
   z-index: -1;
   .timings {
-    transform: rotate(3deg);
-
+    display: flex;
     align-items: center;
     justify-content: center;
+    transform: rotate(3deg);
+
     .timing_text {
       width: 30%;
     }
@@ -650,6 +651,9 @@ body {
   }
 }
 @media (max-width: 835px) {
+  #timing .timings {
+    flex-wrap: wrap;
+  }
   nav {
     ul {
       li {
