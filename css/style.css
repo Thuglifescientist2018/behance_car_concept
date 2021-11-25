@@ -36,8 +36,21 @@ body {
   color: black;
 }
 
+.btn-orange {
+  background: #eb4450;
+  color: white;
+}
+
 .rounded {
   border-radius: 5px;
+}
+
+.rounded-2x {
+  border-radius: 10px;
+}
+
+.rounded-3x {
+  border-radius: 15px;
 }
 
 .slight-black-border {
@@ -55,6 +68,14 @@ body {
 .phone_number {
   font-size: small;
   font-weight: 900;
+}
+
+.circle_number {
+  display: inline-block;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  background: #f5f4f6;
 }
 
 .big_title {
@@ -92,8 +113,16 @@ body {
   width: 85%;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .grey-text {
   color: #828282;
+}
+
+.white-text {
+  color: white;
 }
 
 .bg-white {
@@ -127,9 +156,96 @@ body {
   padding-bottom: 3rem;
 }
 
+.pxy-1 {
+  padding: 0.75rem 1rem;
+}
+
+.pxy-2 {
+  padding: 0.75rem 2rem;
+}
+
+.pxy-3 {
+  padding: 0.75rem 3rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+.pb-2 {
+  padding-bottom: 2rem;
+}
+
+.pb-3 {
+  padding-bottom: 3rem;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.mxy-1 {
+  margin: 0.75rem 1rem;
+}
+
+.mxy-2 {
+  margin: 0.75rem 2rem;
+}
+
+.mxy-3 {
+  margin: 0.75rem 3rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
 .card {
   position: relative;
-  width: 30vw;
+  width: 25vw;
   padding: 1rem 2rem;
   margin: 1rem;
   background-color: #f5f4f6;
@@ -145,26 +261,6 @@ body {
   font-size: 1.5rem;
   color: #f17d85;
   font-size: small;
-}
-
-.card::before {
-  content: "2021";
-  position: absolute;
-  height: 40px;
-  width: 100px;
-  background: #eb4450;
-  border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-  font-weight: bold;
 }
 
 .card .icons {
@@ -203,6 +299,42 @@ body {
   border-radius: 50%;
   background: #eb4450;
   padding: 0.3rem;
+}
+
+.card .card_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1rem;
+  margin-top: 10%;
+}
+
+.card .card_bottom .fas {
+  font-size: 1.5rem;
+  padding: 0.5rem 0.4rem;
+}
+
+.card .card_bottom_text {
+  position: relative;
+  font-weight: bolder;
+  color: #eb4450;
+  text-align: center;
+}
+
+.card .card_bottom_text::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background-color: #eb4450;
 }
 
 #main-header {
@@ -365,7 +497,41 @@ body {
   font-weight: 900;
 }
 
-#cars_result .card .fourspec {
+#cars_result .cars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#cars_result .cars .card::before {
+  content: "2021";
+  position: absolute;
+  height: 40px;
+  width: 100px;
+  background: #eb4450;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+#cars_result .cars .card .fourspec {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,7 +539,92 @@ body {
   padding: 0 1.1rem;
 }
 
-#cars_result .card .fourspec .fas {
+#cars_result .cars .card .fourspec .fas {
   margin-left: 10px;
+}
+
+#rent_three_options {
+  min-height: 700px;
+  position: relative;
+}
+
+#rent_three_options .rotated_red_background {
+  position: absolute;
+  left: 0%;
+  min-height: 100%;
+  background: #eb4450;
+  -webkit-transform: rotate(-3deg) skewX(-1.2deg);
+          transform: rotate(-3deg) skewX(-1.2deg);
+  width: 101%;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+#rent_three_options .rotated_red_background .rent_text {
+  position: relative;
+  top: 10%;
+  text-align: right;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 4%;
+  margin-bottom: 1%;
+}
+
+#rent_three_options .rotated_red_background .rent_text h1,
+#rent_three_options .rotated_red_background .rent_text h2 {
+  font-size: 3rem;
+}
+
+#rent_three_options .rotated_red_background .rent_text p {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 1%;
+}
+
+#rent_three_options .rotated_red_background .rent_options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#rent_three_options .rotated_red_background .rent_options .card {
+  margin-top: 4%;
+  border-top-right-radius: 80px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #ffffff;
+}
+
+#rent_three_options .rotated_red_background .rent_options .card .card_heading {
+  font-size: 2rem;
+  font-weight: 900;
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+}
+
+#rent_three_options .rotated_red_background .rent_options .card .card_p {
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+}
+
+#rent_three_options .rotated_red_background h2 {
+  font-size: 2rem;
+}
+
+#rent_three_options .rotated_red_background h2,
+#rent_three_options .rotated_red_background p {
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
 }
 /*# sourceMappingURL=style.css.map */
