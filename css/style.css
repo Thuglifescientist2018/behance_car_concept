@@ -410,6 +410,10 @@ body {
   background: #ececec;
 }
 
+#main-header #main-nav #menus ul li a:active {
+  background: #c5c5c5;
+}
+
 #main-header #main-nav #right_nav_info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -421,6 +425,17 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.55rem;
+}
+
+#main-header #main-nav #right_nav_info .btn:hover {
+  -webkit-box-shadow: 5px 5px 10px #a1a1a3;
+          box-shadow: 5px 5px 10px #a1a1a3;
+}
+
+#main-header #main-nav #right_nav_info .btn:active {
+  background: white;
+  color: black;
+  border: 3px solid black;
 }
 
 #main-header #main-nav #right_nav_info .phone {
@@ -570,6 +585,15 @@ body {
   font-weight: bold;
 }
 
+#cars_result .cars .card img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
 #cars_result .cars .card .fourspec {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -582,6 +606,11 @@ body {
 
 #cars_result .cars .card .fourspec .fas {
   margin-left: 10px;
+}
+
+#cars_result .cars .card .btn:active {
+  -webkit-box-shadow: 5px 5px 10px #a1a1a3;
+          box-shadow: 5px 5px 10px #a1a1a3;
 }
 
 #rent_three_options {
