@@ -313,12 +313,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 1rem;
   margin-top: 10%;
 }
@@ -402,6 +404,10 @@ body {
   font-size: small;
   font-weight: 700;
   margin: 0.5rem;
+}
+
+#main-header #main-nav #menus ul li a:hover {
+  background: #ececec;
 }
 
 #main-header #main-nav #right_nav_info {
