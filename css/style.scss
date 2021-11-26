@@ -271,8 +271,9 @@ body {
   }
   .card_bottom {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding-top: 1rem;
     margin-top: 10%;
 
@@ -339,6 +340,12 @@ body {
             font-size: small;
             font-weight: 700;
             margin: 0.5rem;
+            &:hover {
+              background: rgb(236, 236, 236);
+            }
+            &:active {
+              background: rgb(197, 197, 197);
+            }
           }
         }
       }
@@ -348,6 +355,16 @@ body {
       justify-content: center;
       align-items: center;
       gap: 0.55rem;
+      .btn {
+        &:hover {
+          box-shadow: 5px 5px 10px #a1a1a3;
+        }
+        &:active {
+          background: white;
+          color: black;
+          border: 3px solid black;
+        }
+      }
       .phone {
         display: flex;
         align-items: center;
@@ -449,6 +466,13 @@ body {
         color: white;
         font-weight: bold;
       }
+      img {
+        &:hover {
+          transform: scale(1.5);
+          transition: 0.5s;
+          transition-timing-function: ease-in-out;
+        }
+      }
       .fourspec {
         display: flex;
         flex-wrap: wrap;
@@ -456,6 +480,11 @@ body {
         padding: 0 1.1rem;
         .fas {
           margin-left: 10px;
+        }
+      }
+      .btn {
+        &:active {
+          box-shadow: 5px 5px 10px #a1a1a3;
         }
       }
     }
@@ -651,6 +680,10 @@ body {
   }
 }
 @media (max-width: 835px) {
+  .big_title {
+    font-size: 10vw;
+  }
+
   #timing .timings {
     flex-wrap: wrap;
   }
@@ -700,5 +733,20 @@ body {
 @media (max-width: 600px) {
   #timing .timings .timing_text {
     width: 100%;
+  }
+
+  .big_title {
+    font-size: 5vw;
+  }
+  #main_footer {
+    .footer_infos {
+      flex-wrap: wrap;
+    }
+  }
+  #car_intro {
+    padding: 0;
+    #car_info .car_intro_text {
+      width: 100%;
+    }
   }
 }

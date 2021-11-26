@@ -861,6 +861,9 @@ body {
 }
 
 @media (max-width: 835px) {
+  .big_title {
+    font-size: 10vw;
+  }
   #timing .timings {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -906,6 +909,19 @@ body {
 
 @media (max-width: 600px) {
   #timing .timings .timing_text {
+    width: 100%;
+  }
+  .big_title {
+    font-size: 5vw;
+  }
+  #main_footer .footer_infos {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #car_intro {
+    padding: 0;
+  }
+  #car_intro #car_info .car_intro_text {
     width: 100%;
   }
 }
