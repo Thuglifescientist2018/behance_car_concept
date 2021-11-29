@@ -679,6 +679,7 @@ body {
     }
   }
 }
+
 @media (max-width: 835px) {
   .big_title {
     font-size: 10vw;
@@ -730,7 +731,12 @@ body {
     }
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+  .location {
+    padding-bottom: 20px;
+    border-bottom: 3px solid black;
+  }
+
   #timing .timings .timing_text {
     width: 100%;
   }
@@ -748,5 +754,11 @@ body {
     #car_info .car_intro_text {
       width: 100%;
     }
+  }
+}
+// Responsive height
+@media (max-height: 823px) {
+  .big_title {
+    font-size: 3vh;
   }
 }
